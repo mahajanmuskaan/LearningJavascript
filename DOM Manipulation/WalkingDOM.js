@@ -26,8 +26,20 @@ console.log(newElems);
 
 // createElement() and appendChild() Methods Usage
 
-const newCreatedEle = document.createElement("div");
-console.log(newCreatedEle);
+// const newCreatedEle = document.createElement("div");
+// console.log(newCreatedEle);
+// newCreatedEle.id = "newcreatedID";
+// newCreatedEle.innerHTML = "This is a new created Div Element";
+// newElem.appendChild(newCreatedEle);
+
+//replaceChild() Method
+
+const parentEle = document.querySelector(".secondDiv");
+console.log(parentEle);
+const oldChildEle = document.querySelectorAll("span")[1];
+console.log(oldChildEle);
+const newCreatedEle = document.createElement("span");
 newCreatedEle.id = "newcreatedID";
 newCreatedEle.innerHTML = "This is a new created Div Element";
-newElem.appendChild(newCreatedEle);
+console.log(newCreatedEle);
+parentEle.replaceChild(newCreatedEle,oldChildEle);
