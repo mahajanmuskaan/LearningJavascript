@@ -43,3 +43,17 @@ newCreatedEle.id = "newcreatedID";
 newCreatedEle.innerHTML = "This is a new created Div Element";
 console.log(newCreatedEle);
 parentEle.replaceChild(newCreatedEle,oldChildEle);
+
+
+// Usage of matches, closest and contains methods:
+
+const parentElement = document.querySelector(".firstDiv");
+console.log(parentElement);
+
+console.log(parentElement.matches("#firstDiv"));
+
+console.log(parentElement.matches(".firstDiv"));
+
+console.log(parentElement.closest(".firstDiv"));
+
+console.log(parentEle.contains(newCreatedEle));
