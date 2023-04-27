@@ -50,10 +50,13 @@ parentEle.replaceChild(newCreatedEle,oldChildEle);
 const parentElement = document.querySelector(".firstDiv");
 console.log(parentElement);
 
+const ele1 = document.getElementById("newfirstSpan");
+console.log(ele1);
+
+console.log(ele1.closest(".newans"));
+
 console.log(parentElement.matches("#firstDiv"));
 
 console.log(parentElement.matches(".firstDiv"));
-
-console.log(parentElement.closest(".firstDiv"));
 
 console.log(parentEle.contains(newCreatedEle));
